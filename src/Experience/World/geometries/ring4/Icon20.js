@@ -17,16 +17,16 @@ export default class icon20
     setIcon()
     {
         const textureLoader = new THREE.TextureLoader()
-        const zephyrTexture = textureLoader.load('companyLogo/Zephyr.png')
+        const zephyrTexture = textureLoader.load('companyLogo/3D Zephyr.png')
 
         const mediaQueryMedium = window.matchMedia('(max-width: 700px)')
         if(mediaQueryMedium.matches)
         {
-         this.radius = 0.06
+         this.radius = 0.03
         }
         else
         {
-         this.radius = 0.05
+         this.radius = 0.02
         }
 
         this.icon20 = new THREE.Mesh(

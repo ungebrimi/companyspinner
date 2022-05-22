@@ -22,15 +22,15 @@ export default class Icon14
         const mediaQueryMedium = window.matchMedia('(max-width: 700px)')
         if(mediaQueryMedium.matches)
         {
-         this.radius = 0.09
+         this.radius = 0.06
         }
         else
         {
-         this.radius = 0.06
+         this.radius = 0.05
         }
 
         this.icon14 = new THREE.Mesh(
-            new THREE.CircleBufferGeometry(this.radius, 20),
+            new THREE.PlaneGeometry(this.radius, this.radius),
             new THREE.MeshBasicMaterial(
                 {
                     map: pix4DTexture,

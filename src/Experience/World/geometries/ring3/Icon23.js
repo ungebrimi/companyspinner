@@ -22,11 +22,11 @@ export default class Icon15
         const mediaQueryMedium = window.matchMedia('(max-width: 700px)')
         if(mediaQueryMedium.matches)
         {
-         this.radius = 0.065
+         this.radius = 0.06
         }
         else
         {
-         this.radius = 0.055
+         this.radius = 0.05
         }
 
         this.icon23 = new THREE.Mesh(

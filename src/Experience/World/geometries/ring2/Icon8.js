@@ -17,16 +17,16 @@ export default class Icon8
     setIcon()
     {
         const textureLoader = new THREE.TextureLoader()
-        const icloneTexture = textureLoader.load('companyLogo/iclone.png')
+        const icloneTexture = textureLoader.load('companyLogo/iClone 8.png')
 
         const mediaQueryMedium = window.matchMedia('(max-width: 700px)')
         if(mediaQueryMedium.matches)
         {
-         this.radius = 0.05
+         this.radius = 0.03
         }
         else
         {
-         this.radius = 0.04
+         this.radius = 0.03
         }
 
         this.icon8 = new THREE.Mesh(

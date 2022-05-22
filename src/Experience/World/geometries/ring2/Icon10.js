@@ -22,15 +22,15 @@ export default class Icon2
         const mediaQueryMedium = window.matchMedia('(max-width: 700px)')
         if(mediaQueryMedium.matches)
         {
-         this.radius = 0.05
+         this.radius = 0.06
         }
         else
         {
-         this.radius = 0.03
+         this.radius = 0.04
         }
 
         this.icon10 = new THREE.Mesh(
-            new THREE.CircleGeometry(this.radius, 20),
+            new THREE.PlaneGeometry(this.radius, this.radius),
             new THREE.MeshBasicMaterial(
                 {
                     map: matterportTexture,

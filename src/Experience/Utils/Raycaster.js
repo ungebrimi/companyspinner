@@ -78,7 +78,11 @@ export default class Raycaster
 
         this.raycaster = new THREE.Raycaster()
         this.currentIntersect = null
-
+        this.rayOrigin = new THREE.Vector3(0, -0, 4)
+        this.rayDirection = new THREE.Vector3(0, 0, -.5)
+        this.rayDirection.normalize()
+        this.raycaster.far = 3.9
+        this.raycaster.set(this.rayOrigin, this.rayDirection)
     }
 
     setRaycaster()
@@ -116,13 +120,6 @@ export default class Raycaster
             this.icon23.icon23,
             this.icon24.icon24         
         ]
-
-        this.rayOrigin = new THREE.Vector3(0, -0, 4)
-        this.rayDirection = new THREE.Vector3(0, 0, -.5)
-        this.rayDirection.normalize()
-        this.scene.add(new THREE.ArrowHelper( this.raycaster.ray.direction, this.camera.instance, 1, 0xffffff ));
-        this.raycaster.far = 3.9
-        this.raycaster.set(this.rayOrigin, this.rayDirection)
         const intersects = this.raycaster.intersectObjects(this.objectsToIntersect)
 
       // console.log(intersects)
@@ -170,7 +167,7 @@ export default class Raycaster
                         currentIconInfo.innerText = "Our main AI-powered Character Creator plugin from Reallusion to generate 3D realtime digital humans."
                         break
                     case this.icon8.icon8:
-                        currentIconTitle.innerText = "Iclone"
+                        currentIconTitle.innerText = "iClone"
                         currentIconInfo.innerText = "Our professional tool to create 3D animations and story telling in virtual environments with visual effects for our virtual worlds."
                         break
                     case this.icon9.icon9:

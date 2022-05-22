@@ -26,14 +26,6 @@ export default class Ring1
     setRing1()
     {
         this.firstRing = new THREE.Group()
-        const ring1 = new THREE.Mesh(
-            new THREE.RingBufferGeometry(0.607, 0.61, 50),
-            new THREE.MeshBasicMaterial({
-                color: '#161928',
-                side: THREE.DoubleSide
-            })
-        )
-        this.firstRing.add(ring1)
         this.firstRing.rotation.x = 1.5
         this.firstRing.rotation.z = 0.05
         this.firstRing.position.y = -.038

@@ -17,7 +17,7 @@ export default class Icon11
     setIcon()
     {
         const textureLoader = new THREE.TextureLoader()
-        const maxTexture = textureLoader.load('companyLogo/max.png')
+        const maxTexture = textureLoader.load('companyLogo/3ds-max original.png')
 
         const mediaQueryMedium = window.matchMedia('(max-width: 700px)')
         if(mediaQueryMedium.matches)
@@ -26,7 +26,7 @@ export default class Icon11
         }
         else
         {
-         this.radius = 0.03
+         this.radius = 0.035
         }
 
         this.icon11 = new THREE.Mesh(

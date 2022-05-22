@@ -22,7 +22,7 @@ export default class Icon7
         const mediaQueryMedium = window.matchMedia('(max-width: 700px)')
         if(mediaQueryMedium.matches)
         {
-         this.radius = 0.043
+         this.radius = 0.035
         }
         else
         {

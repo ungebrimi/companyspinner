@@ -28,7 +28,7 @@ export default class Icon3
         }
 
         const textureLoader = new THREE.TextureLoader()
-        const characterTexture = textureLoader.load('companyLogo/character.png')
+        const characterTexture = textureLoader.load('companyLogo/Character-Creator.png')
         this.icon3 = new THREE.Mesh(
             new THREE.CircleBufferGeometry(this.radius, 20),
             new THREE.MeshBasicMaterial(
